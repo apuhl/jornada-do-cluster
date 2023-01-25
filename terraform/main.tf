@@ -9,7 +9,7 @@ terraform {
 
 # Configure the DigitalOcean Provider
 provider "digitalocean" {
-  token = "dop_v1_8fb7150ed3c65a06cf76f315657b78b665a9446d4fc7f7e200f9542b80e70562"
+  token = var.do_token
 }
 
 resource "digitalocean_droplet" "jenkins_droplet" {
